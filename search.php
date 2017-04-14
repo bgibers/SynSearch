@@ -27,6 +27,7 @@ table, th, td {
 <?php
 	
     $word = $_GET['query'];
+	echo "<table><tr><th>Name</th><th>Description</th></tr>";  
 	search($word,$conn);
 	$apikey = "4D4492YORcpzKHggkLZM"; // NOTE: replace test_only with your own key 
 	$language = "en_US"; // you can use: en_US, es_ES, de_DE, fr_FR, it_IT 
@@ -58,7 +59,7 @@ table, th, td {
 		}
 	} else echo "Http Error: ".$info['http_code'];
 	
-	
+	 echo "</table>";
 	
 function search($query,$conn){	
     $min_length = 3;
@@ -74,11 +75,10 @@ function search($query,$conn){
 	$result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-	echo "<table><tr><th>Name</th><th>Description</th></tr>";     // output data of each row
+	   // output data of each row
      while($row = $result->fetch_assoc()) {
          echo "<tr><td>" . $row["Name"]. "</td><td>" . $row["Des"]. "</td></tr>";
      }
-     echo "</table>";
 } 
  }		
 }
