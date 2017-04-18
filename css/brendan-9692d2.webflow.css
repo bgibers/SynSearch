@@ -1,0 +1,76 @@
+.text-field {
+  width: 200px;
+  float: right;
+  border-radius: 10px 0px 0px 10px;
+  cursor: text;
+}
+
+.submit-button {
+  float: right;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(0, 0, 0, .23);
+  color: #000;
+  cursor: pointer;
+}
+
+.image {
+  margin-top: 1px;
+}
+
+.form {
+  margin-top: 39px;
+}
+
+.container {
+  border-bottom: 2px solid rgba(0, 0, 0, .13);
+}
+
+.text-block {
+  margin-top: 11px;
+  padding-left: 33px;
+}
+
+.section {
+  margin-left: 2px;
+  padding-right: 30px;
+  padding-left: 34px;
+  border-style: solid;
+  border-width: 0px;
+  border-color: rgba(0, 0, 0, .23);
+}
+
+.text-block-2 {
+  padding-left: 27px;
+}
+
+.text-block-3 {
+  display: inline;
+  width: 50px;
+  padding-bottom: 0px;
+  padding-left: 18px;
+  float: none;
+  text-align: left;
+}
+
+.heading {
+  display: inline;
+  padding-left: 80px;
+  float: none;
+  color: rgba(51, 149, 214, .69);
+  font-weight: 100;
+}
+
+.paragraph {
+  padding-top: 17px;
+  padding-right: 7px;
+  padding-left: 104px;
+}
+
+.container-2 {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, .17);
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .09), rgba(0, 0, 0, .09));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .09), rgba(0, 0, 0, .09));
+}
